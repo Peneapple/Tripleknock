@@ -1,0 +1,2 @@
+test file is for output the model, 
+copy is for producing 10 parts data
