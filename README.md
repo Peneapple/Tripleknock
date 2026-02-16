@@ -1,4 +1,5 @@
-# (1) For Users, it is strongly recommended to run Tripleknock on Google Colab. Because you don't need to have much coding skills, or install any softwares. It is very easy to use.
+# For Users, it is strongly recommended to run Tripleknock on Google Colab. \
+Because you don't need to have much coding skills, or install any softwares. It is very easy to use for perople who are not familiar with coding!
 
 #### 1 You can follow the steps to use Tripleknock:
 
@@ -26,13 +27,3 @@
 <img width="477" height="214" alt="image" src="https://github.com/user-attachments/assets/916faf9b-4f3f-4f1d-b6f5-463a7b47de8d" />
 
 
-
-
-
----
-
-# (2) For Developers
-
-If you are a developer, you can browse and contribute to the source code on GitHub.
-
----
