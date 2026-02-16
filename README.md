@@ -23,7 +23,8 @@
 <img width="344" alt="image" src="https://github.com/user-attachments/assets/7ab1bcf2-b9eb-4445-a00c-dab74fb64fd4" />
 
 #### 8 Run this cell to knockout, make sure the gene ID is in order.
-<img width="796" alt="image" src="https://github.com/user-attachments/assets/d0b6c2fb-8bc4-4455-8630-c27954b79232" />
+<img width="477" height="214" alt="image" src="https://github.com/user-attachments/assets/916faf9b-4f3f-4f1d-b6f5-463a7b47de8d" />
+
 
 
 
