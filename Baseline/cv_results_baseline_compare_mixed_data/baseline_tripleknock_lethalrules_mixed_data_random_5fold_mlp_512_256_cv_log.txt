@@ -1,0 +1,226 @@
+[2026-02-19 20:02:07] Config loaded.
+[2026-02-19 20:03:18] two_mer_dict & ae1_2 ready.
+[2026-02-19 20:03:49] Reading 2 baseline CSV files and concatenating...
+[2026-02-19 20:03:49] Loaded triples_no_essential_123630x2-0_123630-1.csv rows=370,890 time=0.2s
+[2026-02-19 20:03:49] Loaded triples_with_essential_0-0_123630-1.csv rows=123,630 time=0.1s
+[2026-02-19 20:03:49] Concat done. Total rows=494,520, time=0.6s
+[2026-02-19 20:03:49] Dataset y=1 ratio=0.5000 | y counts={0: 247260, 1: 247260}
+[2026-02-19 20:03:49] Fold 0 pool ready: 98,904 (y_mean=0.5000)
+[2026-02-19 20:03:49] Fold 1 pool ready: 98,904 (y_mean=0.5000)
+[2026-02-19 20:03:49] Fold 2 pool ready: 98,904 (y_mean=0.5000)
+[2026-02-19 20:03:49] Fold 3 pool ready: 98,904 (y_mean=0.5000)
+[2026-02-19 20:03:49] Fold 4 pool ready: 98,904 (y_mean=0.5000)
+[2026-02-19 20:03:49] ✅ Random 5-fold split ready (gene repetition allowed).
+[2026-02-19 20:04:24] Fold pool sizes: [98904, 98904, 98904, 98904, 98904]
+[2026-02-19 20:04:24] 
+================== Fold 0 ==================
+[2026-02-19 20:04:24] Train folds: [2, 3, 4] | Val fold: 1 | Test fold: 0
+[2026-02-19 20:04:24] Train=296,712, Val=98,904, Test=98,904
+[2026-02-19 20:04:24] y_train mean=0.5000, y_val mean=0.5000, y_test mean=0.5000
+[2026-02-19 20:04:24] [INFO] Gene overlap train∩val=1513, train∩test=1513, val∩test=1513 (allowed)
+[2026-02-19 22:32:04] [Fold 0] Epoch 1: train_loss=0.356924, val_loss=0.146005, val_auc=0.987311
+[2026-02-19 23:58:36] [Fold 0] Epoch 2: train_loss=0.165392, val_loss=0.073342, val_auc=0.996642
+[2026-02-20 01:26:41] [Fold 0] Epoch 3: train_loss=0.107812, val_loss=0.049968, val_auc=0.998174
+[2026-02-20 01:26:43] [Fold 0] Best threshold from VAL = 0.460 | metric=youden
+[2026-02-20 01:26:43] [Fold 0] VAL best stats = {'threshold': 0.4599999999999998, 'score': 0.967766723287228, 'f1_pos': 0.9838595354295411, 'precision_pos': 0.9853161886991442, 'recall_pos': 0.9824071827226402, 'tn': 48728, 'fp': 724, 'fn': 870, 'tp': 48582}
+[2026-02-20 01:26:44] [Fold 0] ✅ Tripleknock TEST AUC = 0.998260
+[2026-02-20 01:26:44] [Fold 0] Tripleknock TEST loss = 0.048268
+[2026-02-20 01:26:44] [Fold 0] Tripleknock Confusion Matrix [[TN,FP],[FN,TP]]:
+[[48738   714]
+ [  844 48608]]
+[2026-02-20 01:26:44] [Fold 0] Tripleknock Report:
+              precision    recall  f1-score   support
+
+           0     0.9830    0.9856    0.9843     49452
+           1     0.9855    0.9829    0.9842     49452
+
+    accuracy                         0.9842     98904
+   macro avg     0.9843    0.9842    0.9842     98904
+weighted avg     0.9843    0.9842    0.9842     98904
+
+[2026-02-20 01:26:45] [Fold 0] ✅ Baseline (essential-rule) TEST AUC = 0.7499292242983094
+[2026-02-20 01:26:45] [Fold 0] Baseline Confusion Matrix [[TN,FP],[FN,TP]]:
+[[49452     0]
+ [24733 24719]]
+[2026-02-20 01:26:45] [Fold 0] Baseline Report:
+              precision    recall  f1-score   support
+
+           0     0.6666    1.0000    0.8000     49452
+           1     1.0000    0.4999    0.6665     49452
+
+    accuracy                         0.7499     98904
+   macro avg     0.8333    0.7499    0.7332     98904
+weighted avg     0.8333    0.7499    0.7332     98904
+
+[2026-02-20 01:26:45] [Fold 0] Saved TEST predictions -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Baseline/cv_results_baseline_compare/fold_0_test_predictions.csv
+[2026-02-20 01:26:46] 
+================== Fold 1 ==================
+[2026-02-20 01:26:46] Train folds: [0, 3, 4] | Val fold: 2 | Test fold: 1
+[2026-02-20 01:26:46] Train=296,712, Val=98,904, Test=98,904
+[2026-02-20 01:26:46] y_train mean=0.5000, y_val mean=0.5000, y_test mean=0.5000
+[2026-02-20 01:26:46] [INFO] Gene overlap train∩val=1513, train∩test=1513, val∩test=1513 (allowed)
+[2026-02-20 03:50:57] [Fold 1] Epoch 1: train_loss=0.353062, val_loss=0.149464, val_auc=0.986858
+[2026-02-20 05:20:38] [Fold 1] Epoch 2: train_loss=0.157702, val_loss=0.070054, val_auc=0.996834
+[2026-02-20 06:36:51] [Fold 1] Epoch 3: train_loss=0.105280, val_loss=0.043611, val_auc=0.998457
+[2026-02-20 06:36:53] [Fold 1] Best threshold from VAL = 0.445 | metric=youden
+[2026-02-20 06:36:53] [Fold 1] VAL best stats = {'threshold': 0.4449999999999998, 'score': 0.9728827954380005, 'f1_pos': 0.9864063497851034, 'precision_pos': 0.9889627416305873, 'recall_pos': 0.9838631400145595, 'tn': 48909, 'fp': 543, 'fn': 798, 'tp': 48654}
+[2026-02-20 06:36:54] [Fold 1] ✅ Tripleknock TEST AUC = 0.998556
+[2026-02-20 06:36:54] [Fold 1] Tripleknock TEST loss = 0.043019
+[2026-02-20 06:36:54] [Fold 1] Tripleknock Confusion Matrix [[TN,FP],[FN,TP]]:
+[[48870   582]
+ [  812 48640]]
+[2026-02-20 06:36:54] [Fold 1] Tripleknock Report:
+              precision    recall  f1-score   support
+
+           0     0.9837    0.9882    0.9859     49452
+           1     0.9882    0.9836    0.9859     49452
+
+    accuracy                         0.9859     98904
+   macro avg     0.9859    0.9859    0.9859     98904
+weighted avg     0.9859    0.9859    0.9859     98904
+
+[2026-02-20 06:36:54] [Fold 1] ✅ Baseline (essential-rule) TEST AUC = 0.7497067863787107
+[2026-02-20 06:36:54] [Fold 1] Baseline Confusion Matrix [[TN,FP],[FN,TP]]:
+[[49452     0]
+ [24755 24697]]
+[2026-02-20 06:36:54] [Fold 1] Baseline Report:
+              precision    recall  f1-score   support
+
+           0     0.6664    1.0000    0.7998     49452
+           1     1.0000    0.4994    0.6661     49452
+
+    accuracy                         0.7497     98904
+   macro avg     0.8332    0.7497    0.7330     98904
+weighted avg     0.8332    0.7497    0.7330     98904
+
+[2026-02-20 06:36:54] [Fold 1] Saved TEST predictions -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Baseline/cv_results_baseline_compare/fold_1_test_predictions.csv
+[2026-02-20 06:36:55] 
+================== Fold 2 ==================
+[2026-02-20 06:36:55] Train folds: [0, 1, 4] | Val fold: 3 | Test fold: 2
+[2026-02-20 06:36:55] Train=296,712, Val=98,904, Test=98,904
+[2026-02-20 06:36:55] y_train mean=0.5000, y_val mean=0.5000, y_test mean=0.5000
+[2026-02-20 06:36:55] [INFO] Gene overlap train∩val=1513, train∩test=1513, val∩test=1513 (allowed)
+[2026-02-20 08:19:55] [Fold 2] Epoch 1: train_loss=0.354321, val_loss=0.146082, val_auc=0.987248
+[2026-02-20 09:21:08] [Fold 2] Epoch 2: train_loss=0.155869, val_loss=0.071858, val_auc=0.996871
+[2026-02-20 10:23:18] [Fold 2] Epoch 3: train_loss=0.104145, val_loss=0.044481, val_auc=0.998481
+[2026-02-20 10:23:20] [Fold 2] Best threshold from VAL = 0.485 | metric=youden
+[2026-02-20 10:23:20] [Fold 2] VAL best stats = {'threshold': 0.48499999999999976, 'score': 0.9715683895494621, 'f1_pos': 0.9857368933609671, 'precision_pos': 0.9890277664685286, 'recall_pos': 0.9824678476098034, 'tn': 48913, 'fp': 539, 'fn': 867, 'tp': 48585}
+[2026-02-20 10:23:21] [Fold 2] ✅ Tripleknock TEST AUC = 0.998294
+[2026-02-20 10:23:21] [Fold 2] Tripleknock TEST loss = 0.045170
+[2026-02-20 10:23:21] [Fold 2] Tripleknock Confusion Matrix [[TN,FP],[FN,TP]]:
+[[48934   518]
+ [  872 48580]]
+[2026-02-20 10:23:21] [Fold 2] Tripleknock Report:
+              precision    recall  f1-score   support
+
+           0     0.9825    0.9895    0.9860     49452
+           1     0.9894    0.9824    0.9859     49452
+
+    accuracy                         0.9859     98904
+   macro avg     0.9860    0.9859    0.9859     98904
+weighted avg     0.9860    0.9859    0.9859     98904
+
+[2026-02-20 10:23:21] [Fold 2] ✅ Baseline (essential-rule) TEST AUC = 0.7497977837094556
+[2026-02-20 10:23:21] [Fold 2] Baseline Confusion Matrix [[TN,FP],[FN,TP]]:
+[[49452     0]
+ [24746 24706]]
+[2026-02-20 10:23:21] [Fold 2] Baseline Report:
+              precision    recall  f1-score   support
+
+           0     0.6665    1.0000    0.7999     49452
+           1     1.0000    0.4996    0.6663     49452
+
+    accuracy                         0.7498     98904
+   macro avg     0.8332    0.7498    0.7331     98904
+weighted avg     0.8332    0.7498    0.7331     98904
+
+[2026-02-20 10:23:21] [Fold 2] Saved TEST predictions -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Baseline/cv_results_baseline_compare/fold_2_test_predictions.csv
+[2026-02-20 10:23:22] 
+================== Fold 3 ==================
+[2026-02-20 10:23:22] Train folds: [0, 1, 2] | Val fold: 4 | Test fold: 3
+[2026-02-20 10:23:22] Train=296,712, Val=98,904, Test=98,904
+[2026-02-20 10:23:22] y_train mean=0.5000, y_val mean=0.5000, y_test mean=0.5000
+[2026-02-20 10:23:22] [INFO] Gene overlap train∩val=1513, train∩test=1513, val∩test=1513 (allowed)
+[2026-02-20 12:05:17] [Fold 3] Epoch 1: train_loss=0.349512, val_loss=0.154472, val_auc=0.986098
+[2026-02-20 13:06:41] [Fold 3] Epoch 2: train_loss=0.152815, val_loss=0.069747, val_auc=0.996617
+[2026-02-20 14:07:51] [Fold 3] Epoch 3: train_loss=0.102050, val_loss=0.048008, val_auc=0.998270
+[2026-02-20 14:07:53] [Fold 3] Best threshold from VAL = 0.575 | metric=youden
+[2026-02-20 14:07:53] [Fold 3] VAL best stats = {'threshold': 0.5749999999999997, 'score': 0.9702539836609237, 'f1_pos': 0.9850861273605251, 'precision_pos': 0.9878001667310546, 'recall_pos': 0.9823869610935857, 'tn': 48852, 'fp': 600, 'fn': 871, 'tp': 48581}
+[2026-02-20 14:07:54] [Fold 3] ✅ Tripleknock TEST AUC = 0.998248
+[2026-02-20 14:07:54] [Fold 3] Tripleknock TEST loss = 0.047513
+[2026-02-20 14:07:54] [Fold 3] Tripleknock Confusion Matrix [[TN,FP],[FN,TP]]:
+[[48877   575]
+ [  895 48557]]
+[2026-02-20 14:07:54] [Fold 3] Tripleknock Report:
+              precision    recall  f1-score   support
+
+           0     0.9820    0.9884    0.9852     49452
+           1     0.9883    0.9819    0.9851     49452
+
+    accuracy                         0.9851     98904
+   macro avg     0.9852    0.9851    0.9851     98904
+weighted avg     0.9852    0.9851    0.9851     98904
+
+[2026-02-20 14:07:54] [Fold 3] ✅ Baseline (essential-rule) TEST AUC = 0.751112189597994
+[2026-02-20 14:07:54] [Fold 3] Baseline Confusion Matrix [[TN,FP],[FN,TP]]:
+[[49452     0]
+ [24616 24836]]
+[2026-02-20 14:07:54] [Fold 3] Baseline Report:
+              precision    recall  f1-score   support
+
+           0     0.6677    1.0000    0.8007     49452
+           1     1.0000    0.5022    0.6686     49452
+
+    accuracy                         0.7511     98904
+   macro avg     0.8338    0.7511    0.7347     98904
+weighted avg     0.8338    0.7511    0.7347     98904
+
+[2026-02-20 14:07:55] [Fold 3] Saved TEST predictions -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Baseline/cv_results_baseline_compare/fold_3_test_predictions.csv
+[2026-02-20 14:07:56] 
+================== Fold 4 ==================
+[2026-02-20 14:07:56] Train folds: [1, 2, 3] | Val fold: 0 | Test fold: 4
+[2026-02-20 14:07:56] Train=296,712, Val=98,904, Test=98,904
+[2026-02-20 14:07:56] y_train mean=0.5000, y_val mean=0.5000, y_test mean=0.5000
+[2026-02-20 14:07:56] [INFO] Gene overlap train∩val=1513, train∩test=1513, val∩test=1513 (allowed)
+[2026-02-20 15:51:39] [Fold 4] Epoch 1: train_loss=0.351310, val_loss=0.136359, val_auc=0.989147
+[2026-02-20 16:53:10] [Fold 4] Epoch 2: train_loss=0.156403, val_loss=0.071702, val_auc=0.997319
+[2026-02-20 17:53:46] [Fold 4] Epoch 3: train_loss=0.109041, val_loss=0.047019, val_auc=0.998236
+[2026-02-20 17:53:48] [Fold 4] Best threshold from VAL = 0.505 | metric=youden
+[2026-02-20 17:53:48] [Fold 4] VAL best stats = {'threshold': 0.5049999999999998, 'score': 0.9696271131602362, 'f1_pos': 0.9847871004329967, 'precision_pos': 0.9865056818181818, 'recall_pos': 0.9830744964814365, 'tn': 48787, 'fp': 665, 'fn': 837, 'tp': 48615}
+[2026-02-20 17:53:49] [Fold 4] ✅ Tripleknock TEST AUC = 0.998144
+[2026-02-20 17:53:49] [Fold 4] Tripleknock TEST loss = 0.048579
+[2026-02-20 17:53:49] [Fold 4] Tripleknock Confusion Matrix [[TN,FP],[FN,TP]]:
+[[48741   711]
+ [  871 48581]]
+[2026-02-20 17:53:49] [Fold 4] Tripleknock Report:
+              precision    recall  f1-score   support
+
+           0     0.9824    0.9856    0.9840     49452
+           1     0.9856    0.9824    0.9840     49452
+
+    accuracy                         0.9840     98904
+   macro avg     0.9840    0.9840    0.9840     98904
+weighted avg     0.9840    0.9840    0.9840     98904
+
+[2026-02-20 17:53:49] [Fold 4] ✅ Baseline (essential-rule) TEST AUC = 0.7494540160155302
+[2026-02-20 17:53:49] [Fold 4] Baseline Confusion Matrix [[TN,FP],[FN,TP]]:
+[[49452     0]
+ [24780 24672]]
+[2026-02-20 17:53:49] [Fold 4] Baseline Report:
+              precision    recall  f1-score   support
+
+           0     0.6662    1.0000    0.7997     49452
+           1     1.0000    0.4989    0.6657     49452
+
+    accuracy                         0.7495     98904
+   macro avg     0.8331    0.7495    0.7327     98904
+weighted avg     0.8331    0.7495    0.7327     98904
+
+[2026-02-20 17:53:49] [Fold 4] Saved TEST predictions -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Baseline/cv_results_baseline_compare/fold_4_test_predictions.csv
+[2026-02-20 17:53:50] 
+==================== CV Summary (Tripleknock vs Baseline) ====================
+[2026-02-20 17:53:50] Saved summary -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Baseline/cv_results_baseline_compare/cv_metrics_summary.csv
+[2026-02-20 17:53:50] Tripleknock AUCs per fold: [0.9982597826739014, 0.9985556186624788, 0.9982940682963009, 0.9982481533561894, 0.99814378493735]
+[2026-02-20 17:53:50] Baseline   AUCs per fold: [0.7499292242983094, 0.7497067863787107, 0.7497977837094556, 0.751112189597994, 0.7494540160155302]
+[2026-02-20 17:53:50] Tripleknock Mean AUC = 0.998300, Std = 0.000137
+[2026-02-20 17:53:50] Baseline   Mean AUC = 0.750000, Std = 0.000577

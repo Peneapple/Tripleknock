@@ -1,0 +1,23 @@
+[2026-02-11 16:46:27] Config loaded.
+[2026-02-11 16:48:56] two_mer_dict & ae1_2 ready.
+[2026-02-11 16:50:17] Reading CSV parts...
+[2026-02-11 16:50:45] Loaded iML1515-1.csv rows=57,610,761 time=27.4s
+[2026-02-11 16:51:06] Loaded iML1515-2.csv rows=57,610,761 time=20.9s
+[2026-02-11 16:51:11] Concat done. Total rows=115,221,522, time=54.2s
+[2026-02-11 16:52:13] Dataset rows=115,221,522 | y=1 ratio=0.3394
+[2026-02-11 16:52:41] Unique genes in data: 1,513 | time=27.9s
+[2026-02-11 16:52:41] Gene folds sizes: [303, 303, 303, 302, 302]
+[2026-02-11 16:52:41] ✅ Gene-disjoint split ready (FAST version).
+[2026-02-11 16:53:01] Fold 0 pool ready: 600,000 (y_mean=0.3774)
+[2026-02-11 16:53:19] Fold 1 pool ready: 600,000 (y_mean=0.3395)
+[2026-02-11 16:53:36] Fold 2 pool ready: 600,000 (y_mean=0.3086)
+[2026-02-11 16:53:54] Fold 3 pool ready: 600,000 (y_mean=0.3252)
+[2026-02-11 16:54:12] Fold 4 pool ready: 600,000 (y_mean=0.3480)
+[2026-02-11 16:54:12] Fold pool sizes: [600000, 600000, 600000, 600000, 600000]
+[2026-02-11 16:54:12] 
+================== Fold 0 ==================
+[2026-02-11 16:54:12] Train folds: [2, 3, 4] | Val fold: 1 | Test fold: 0
+[2026-02-11 16:54:12] Train=1,800,000, Val=600,000, Test=600,000
+[2026-02-11 16:54:12] y_train mean=0.3273, y_val mean=0.3395, y_test mean=0.3774
+[2026-02-11 16:54:13] Gene overlap train∩val=0, train∩test=0, val∩test=0
+[2026-02-11 16:54:17] [Fold 0] Exported TRAIN triples -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Gene-level-disjoint-subset-performance/512-256-3000k/fold-1-train.csv

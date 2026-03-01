@@ -1,0 +1,174 @@
+[2026-02-11 15:54:24] Config loaded.
+[2026-02-11 15:55:06] two_mer_dict & ae1_2 ready.
+[2026-02-11 15:55:36] Reading CSV parts...
+[2026-02-11 15:55:55] Loaded iML1515-1.csv rows=57,610,761 time=19.4s
+[2026-02-11 15:55:57] Concat done. Total rows=57,610,761, time=21.9s
+[2026-02-11 15:56:26] Dataset rows=57,610,761 | y=1 ratio=0.3393
+[2026-02-11 15:56:39] Unique genes in data: 1,513 | time=12.9s
+[2026-02-11 15:56:39] Gene folds sizes: [303, 303, 303, 302, 302]
+[2026-02-11 15:56:39] ✅ Gene-disjoint split ready (FAST version).
+[2026-02-11 15:58:26] Fold 0 pool ready: 200,000 (y_mean=0.3769)
+[2026-02-11 15:58:34] Fold 1 pool ready: 200,000 (y_mean=0.3392)
+[2026-02-11 15:58:43] Fold 2 pool ready: 200,000 (y_mean=0.3084)
+[2026-02-11 15:58:51] Fold 3 pool ready: 200,000 (y_mean=0.3241)
+[2026-02-11 15:58:59] Fold 4 pool ready: 200,000 (y_mean=0.3494)
+[2026-02-11 15:58:59] Fold pool sizes: [200000, 200000, 200000, 200000, 200000]
+[2026-02-11 15:58:59] 
+================== Fold 0 ==================
+[2026-02-11 15:58:59] Train folds: [2, 3, 4] | Val fold: 1 | Test fold: 0
+[2026-02-11 15:58:59] Train=600,000, Val=200,000, Test=200,000
+[2026-02-11 15:58:59] y_train mean=0.3273, y_val mean=0.3392, y_test mean=0.3769
+[2026-02-11 15:58:59] Gene overlap train∩val=0, train∩test=0, val∩test=0
+[2026-02-11 15:59:00] [Fold 0] Exported TRAIN triples -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Gene-level-disjoint-subset-performance/512-256-1000k/fold-1-train.csv
+[2026-02-11 19:25:44] [Fold 0] Epoch 1: train_loss=0.152409, val_loss=2.297802, val_auc=0.603163
+[2026-02-11 21:34:42] [Fold 0] Epoch 2: train_loss=0.044123, val_loss=3.371725, val_auc=0.600398
+[2026-02-11 23:46:00] [Fold 0] Epoch 3: train_loss=0.025980, val_loss=3.832195, val_auc=0.596292
+[2026-02-12 01:55:04] [Fold 0] Epoch 4: train_loss=0.023576, val_loss=3.986837, val_auc=0.597008
+[2026-02-12 01:55:04] [Fold 0] Early stop at epoch 4 (best_val_auc=0.603163 @epoch 1)
+[2026-02-12 01:55:07] [Fold 0] Best threshold from VAL = 0.050 | metric=youden
+[2026-02-12 01:55:07] [Fold 0] VAL best stats = {'threshold': 0.05, 'score': 0.15545397505739778, 'f1_pos': 0.48425408849123625, 'precision_pos': 0.4106618778860954, 'recall_pos': 0.589980982146806, 'tn': 74738, 'fp': 57431, 'fn': 27812, 'tp': 40019}
+[2026-02-12 01:55:09] [Fold 0] Exported TEST predictions -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Gene-level-disjoint-subset-performance/512-256-1000k/fold-1-test.csv
+[2026-02-12 01:55:10] [Fold 0] ✅ TEST AUC = 0.583029
+[2026-02-12 01:55:10] [Fold 0] TEST loss = 2.372654
+[2026-02-12 01:55:10] [Fold 0] Confusion Matrix [[TN,FP],[FN,TP]]:
+[[62183 62445]
+ [28799 46573]]
+[2026-02-12 01:55:10] [Fold 0] Report:
+              precision    recall  f1-score   support
+
+           0     0.6835    0.4989    0.5768    124628
+           1     0.4272    0.6179    0.5052     75372
+
+    accuracy                         0.5438    200000
+   macro avg     0.5553    0.5584    0.5410    200000
+weighted avg     0.5869    0.5438    0.5498    200000
+
+[2026-02-12 01:55:11] 
+================== Fold 1 ==================
+[2026-02-12 01:55:11] Train folds: [0, 3, 4] | Val fold: 2 | Test fold: 1
+[2026-02-12 01:55:11] Train=600,000, Val=200,000, Test=200,000
+[2026-02-12 01:55:11] y_train mean=0.3501, y_val mean=0.3084, y_test mean=0.3392
+[2026-02-12 01:55:12] Gene overlap train∩val=0, train∩test=0, val∩test=0
+[2026-02-12 01:55:13] [Fold 1] Exported TRAIN triples -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Gene-level-disjoint-subset-performance/512-256-1000k/fold-2-train.csv
+[2026-02-12 05:29:28] [Fold 1] Epoch 1: train_loss=0.146170, val_loss=3.177629, val_auc=0.545103
+[2026-02-12 07:35:53] [Fold 1] Epoch 2: train_loss=0.036183, val_loss=4.140616, val_auc=0.547446
+[2026-02-12 09:43:33] [Fold 1] Epoch 3: train_loss=0.026303, val_loss=5.291111, val_auc=0.541906
+[2026-02-12 11:51:59] [Fold 1] Epoch 4: train_loss=0.019541, val_loss=5.070659, val_auc=0.541716
+[2026-02-12 14:01:29] [Fold 1] Epoch 5: train_loss=0.015637, val_loss=6.273433, val_auc=0.545749
+[2026-02-12 14:01:29] [Fold 1] Early stop at epoch 5 (best_val_auc=0.547446 @epoch 2)
+[2026-02-12 14:01:33] [Fold 1] Best threshold from VAL = 0.050 | metric=youden
+[2026-02-12 14:01:33] [Fold 1] VAL best stats = {'threshold': 0.05, 'score': 0.08171529410399048, 'f1_pos': 0.43736825996269746, 'precision_pos': 0.3396842482956584, 'recall_pos': 0.6139130716729082, 'tn': 64705, 'fp': 73612, 'fn': 23815, 'tp': 37868}
+[2026-02-12 14:01:35] [Fold 1] Exported TEST predictions -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Gene-level-disjoint-subset-performance/512-256-1000k/fold-2-test.csv
+[2026-02-12 14:01:36] [Fold 1] ✅ TEST AUC = 0.623591
+[2026-02-12 14:01:36] [Fold 1] TEST loss = 2.539982
+[2026-02-12 14:01:36] [Fold 1] Confusion Matrix [[TN,FP],[FN,TP]]:
+[[65003 67166]
+ [21524 46307]]
+[2026-02-12 14:01:36] [Fold 1] Report:
+              precision    recall  f1-score   support
+
+           0     0.7512    0.4918    0.5945    132169
+           1     0.4081    0.6827    0.5108     67831
+
+    accuracy                         0.5565    200000
+   macro avg     0.5797    0.5872    0.5526    200000
+weighted avg     0.6349    0.5565    0.5661    200000
+
+[2026-02-12 14:01:37] 
+================== Fold 2 ==================
+[2026-02-12 14:01:37] Train folds: [0, 1, 4] | Val fold: 3 | Test fold: 2
+[2026-02-12 14:01:37] Train=600,000, Val=200,000, Test=200,000
+[2026-02-12 14:01:37] y_train mean=0.3551, y_val mean=0.3241, y_test mean=0.3084
+[2026-02-12 14:01:37] Gene overlap train∩val=0, train∩test=0, val∩test=0
+[2026-02-12 14:01:38] [Fold 2] Exported TRAIN triples -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Gene-level-disjoint-subset-performance/512-256-1000k/fold-3-train.csv
+[2026-02-12 17:36:27] [Fold 2] Epoch 1: train_loss=0.129806, val_loss=3.052680, val_auc=0.564183
+[2026-02-12 19:44:28] [Fold 2] Epoch 2: train_loss=0.027587, val_loss=3.568655, val_auc=0.564933
+[2026-02-12 21:50:55] [Fold 2] Epoch 3: train_loss=0.017109, val_loss=3.776043, val_auc=0.561346
+[2026-02-12 23:57:51] [Fold 2] Epoch 4: train_loss=0.016885, val_loss=4.735260, val_auc=0.562603
+[2026-02-13 02:05:10] [Fold 2] Epoch 5: train_loss=0.013525, val_loss=3.957505, val_auc=0.554173
+[2026-02-13 02:05:10] [Fold 2] Early stop at epoch 5 (best_val_auc=0.564933 @epoch 2)
+[2026-02-13 02:05:14] [Fold 2] Best threshold from VAL = 0.050 | metric=youden
+[2026-02-13 02:05:14] [Fold 2] VAL best stats = {'threshold': 0.05, 'score': 0.09580496057102461, 'f1_pos': 0.4421398450519875, 'precision_pos': 0.3668205764497691, 'recall_pos': 0.5563816987011384, 'tn': 72916, 'fp': 62258, 'fn': 28758, 'tp': 36068}
+[2026-02-13 02:05:16] [Fold 2] Exported TEST predictions -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Gene-level-disjoint-subset-performance/512-256-1000k/fold-3-test.csv
+[2026-02-13 02:05:16] [Fold 2] ✅ TEST AUC = 0.548154
+[2026-02-13 02:05:16] [Fold 2] TEST loss = 4.457886
+[2026-02-13 02:05:16] [Fold 2] Confusion Matrix [[TN,FP],[FN,TP]]:
+[[69919 68398]
+ [26293 35390]]
+[2026-02-13 02:05:16] [Fold 2] Report:
+              precision    recall  f1-score   support
+
+           0     0.7267    0.5055    0.5963    138317
+           1     0.3410    0.5737    0.4277     61683
+
+    accuracy                         0.5265    200000
+   macro avg     0.5339    0.5396    0.5120    200000
+weighted avg     0.6078    0.5265    0.5443    200000
+
+[2026-02-13 02:05:17] 
+================== Fold 3 ==================
+[2026-02-13 02:05:17] Train folds: [0, 1, 2] | Val fold: 4 | Test fold: 3
+[2026-02-13 02:05:17] Train=600,000, Val=200,000, Test=200,000
+[2026-02-13 02:05:17] y_train mean=0.3415, y_val mean=0.3494, y_test mean=0.3241
+[2026-02-13 02:05:17] Gene overlap train∩val=0, train∩test=0, val∩test=0
+[2026-02-13 02:05:19] [Fold 3] Exported TRAIN triples -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Gene-level-disjoint-subset-performance/512-256-1000k/fold-4-train.csv
+[2026-02-13 05:37:15] [Fold 3] Epoch 1: train_loss=0.132820, val_loss=3.126654, val_auc=0.613242
+[2026-02-13 07:48:29] [Fold 3] Epoch 2: train_loss=0.029835, val_loss=4.308337, val_auc=0.615782
+[2026-02-13 09:56:52] [Fold 3] Epoch 3: train_loss=0.020765, val_loss=5.226897, val_auc=0.613802
+[2026-02-13 12:03:56] [Fold 3] Epoch 4: train_loss=0.022045, val_loss=4.573195, val_auc=0.610583
+[2026-02-13 14:09:19] [Fold 3] Epoch 5: train_loss=0.017013, val_loss=5.157377, val_auc=0.615175
+[2026-02-13 14:09:19] [Fold 3] Early stop at epoch 5 (best_val_auc=0.615782 @epoch 2)
+[2026-02-13 14:09:22] [Fold 3] Best threshold from VAL = 0.070 | metric=youden
+[2026-02-13 14:09:22] [Fold 3] VAL best stats = {'threshold': 0.06999999999999999, 'score': 0.1684022784145901, 'f1_pos': 0.5108759025873154, 'precision_pos': 0.419948570954571, 'recall_pos': 0.6520600483707085, 'tn': 67188, 'fp': 62935, 'fn': 24313, 'tp': 45564}
+[2026-02-13 14:09:24] [Fold 3] Exported TEST predictions -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Gene-level-disjoint-subset-performance/512-256-1000k/fold-4-test.csv
+[2026-02-13 14:09:25] [Fold 3] ✅ TEST AUC = 0.580357
+[2026-02-13 14:09:25] [Fold 3] TEST loss = 4.777888
+[2026-02-13 14:09:25] [Fold 3] Confusion Matrix [[TN,FP],[FN,TP]]:
+[[66525 68649]
+ [24742 40084]]
+[2026-02-13 14:09:25] [Fold 3] Report:
+              precision    recall  f1-score   support
+
+           0     0.7289    0.4921    0.5876    135174
+           1     0.3686    0.6183    0.4619     64826
+
+    accuracy                         0.5330    200000
+   macro avg     0.5488    0.5552    0.5247    200000
+weighted avg     0.6121    0.5330    0.5468    200000
+
+[2026-02-13 14:09:26] 
+================== Fold 4 ==================
+[2026-02-13 14:09:26] Train folds: [1, 2, 3] | Val fold: 0 | Test fold: 4
+[2026-02-13 14:09:26] Train=600,000, Val=200,000, Test=200,000
+[2026-02-13 14:09:26] y_train mean=0.3239, y_val mean=0.3769, y_test mean=0.3494
+[2026-02-13 14:09:26] Gene overlap train∩val=0, train∩test=0, val∩test=0
+[2026-02-13 14:09:27] [Fold 4] Exported TRAIN triples -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Gene-level-disjoint-subset-performance/512-256-1000k/fold-5-train.csv
+[2026-02-13 17:43:14] [Fold 4] Epoch 1: train_loss=0.132260, val_loss=2.654700, val_auc=0.603531
+[2026-02-13 19:51:15] [Fold 4] Epoch 2: train_loss=0.037376, val_loss=3.373892, val_auc=0.594398
+[2026-02-13 21:58:58] [Fold 4] Epoch 3: train_loss=0.021762, val_loss=4.097938, val_auc=0.607303
+[2026-02-14 00:06:07] [Fold 4] Epoch 4: train_loss=0.018701, val_loss=3.941382, val_auc=0.602919
+[2026-02-14 02:17:21] [Fold 4] Epoch 5: train_loss=0.017252, val_loss=3.836696, val_auc=0.606976
+[2026-02-14 04:24:04] [Fold 4] Epoch 6: train_loss=0.014232, val_loss=4.461076, val_auc=0.603053
+[2026-02-14 04:24:04] [Fold 4] Early stop at epoch 6 (best_val_auc=0.607303 @epoch 3)
+[2026-02-14 04:24:08] [Fold 4] Best threshold from VAL = 0.115 | metric=youden
+[2026-02-14 04:24:08] [Fold 4] VAL best stats = {'threshold': 0.11499999999999998, 'score': 0.1565334186808689, 'f1_pos': 0.5276102611464595, 'precision_pos': 0.4431864315034508, 'recall_pos': 0.6517672345167966, 'tn': 62908, 'fp': 61720, 'fn': 26247, 'tp': 49125}
+[2026-02-14 04:24:10] [Fold 4] Exported TEST predictions -> /data1/xpgeng/cross_pathogen/sci_rep_revision_20260113/Gene-level-disjoint-subset-performance/512-256-1000k/fold-5-test.csv
+[2026-02-14 04:24:10] [Fold 4] ✅ TEST AUC = 0.584783
+[2026-02-14 04:24:10] [Fold 4] TEST loss = 4.798576
+[2026-02-14 04:24:10] [Fold 4] Confusion Matrix [[TN,FP],[FN,TP]]:
+[[63900 66223]
+ [25552 44325]]
+[2026-02-14 04:24:10] [Fold 4] Report:
+              precision    recall  f1-score   support
+
+           0     0.7143    0.4911    0.5820    130123
+           1     0.4010    0.6343    0.4913     69877
+
+    accuracy                         0.5411    200000
+   macro avg     0.5577    0.5627    0.5367    200000
+weighted avg     0.6049    0.5411    0.5503    200000
+
+[2026-02-14 04:24:12] 
+==================== CV Summary ====================
+[2026-02-14 04:24:12] AUCs per fold: [0.5830289249462133, 0.6235910045887159, 0.5481544746491644, 0.5803567010254097, 0.5847829453646123]
+[2026-02-14 04:24:12] Mean AUC = 0.583983, Std = 0.023947

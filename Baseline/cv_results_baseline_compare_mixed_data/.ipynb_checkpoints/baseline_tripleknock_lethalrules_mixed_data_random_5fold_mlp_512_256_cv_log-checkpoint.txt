@@ -1,0 +1,20 @@
+[2026-02-19 20:02:07] Config loaded.
+[2026-02-19 20:03:18] two_mer_dict & ae1_2 ready.
+[2026-02-19 20:03:49] Reading 2 baseline CSV files and concatenating...
+[2026-02-19 20:03:49] Loaded triples_no_essential_123630x2-0_123630-1.csv rows=370,890 time=0.2s
+[2026-02-19 20:03:49] Loaded triples_with_essential_0-0_123630-1.csv rows=123,630 time=0.1s
+[2026-02-19 20:03:49] Concat done. Total rows=494,520, time=0.6s
+[2026-02-19 20:03:49] Dataset y=1 ratio=0.5000 | y counts={0: 247260, 1: 247260}
+[2026-02-19 20:03:49] Fold 0 pool ready: 98,904 (y_mean=0.5000)
+[2026-02-19 20:03:49] Fold 1 pool ready: 98,904 (y_mean=0.5000)
+[2026-02-19 20:03:49] Fold 2 pool ready: 98,904 (y_mean=0.5000)
+[2026-02-19 20:03:49] Fold 3 pool ready: 98,904 (y_mean=0.5000)
+[2026-02-19 20:03:49] Fold 4 pool ready: 98,904 (y_mean=0.5000)
+[2026-02-19 20:03:49] ✅ Random 5-fold split ready (gene repetition allowed).
+[2026-02-19 20:04:24] Fold pool sizes: [98904, 98904, 98904, 98904, 98904]
+[2026-02-19 20:04:24] 
+================== Fold 0 ==================
+[2026-02-19 20:04:24] Train folds: [2, 3, 4] | Val fold: 1 | Test fold: 0
+[2026-02-19 20:04:24] Train=296,712, Val=98,904, Test=98,904
+[2026-02-19 20:04:24] y_train mean=0.5000, y_val mean=0.5000, y_test mean=0.5000
+[2026-02-19 20:04:24] [INFO] Gene overlap train∩val=1513, train∩test=1513, val∩test=1513 (allowed)
